@@ -1,3 +1,8 @@
+"""
+In this example, multiple input data will be applied to multiple weights to predict a single outcome.
+The weight of toes, winning percentage and fan turnout on the success prediction (in the same order)
+"""
+
 def weighted_sum(data, weights):
     assert (len(data) == len(weights))
 
@@ -19,6 +24,7 @@ def predict(data, weights):
 input_toes = [8.5, 10, 23]
 input_win_pc = [65, 34, 78]
 input_fans = [12, 8, 15]
+
 
 weights = [0.1, 0.2, 0]
 
