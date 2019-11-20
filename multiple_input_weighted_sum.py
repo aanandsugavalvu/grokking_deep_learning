@@ -1,6 +1,3 @@
-#import sys
-
-
 def weighted_sum(data, weights):
     assert (len(data) == len(weights))
 
@@ -25,7 +22,6 @@ input_fans = [12, 8, 15]
 
 weights = [0.1, 0.2, 0]
 
-assert (len(input_toes) == len(input_win_pc) == len(input_fans))
 
 for i in range(len(input_fans)):
 	input_vector = []
