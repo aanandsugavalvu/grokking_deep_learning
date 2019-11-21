@@ -11,7 +11,7 @@ def predict(vector, matrix):
 	output = [0, 0, 0]
 
 	for i in range(len(vector)):
-		output[i] += weighted_sum(vector, matrix[i])
+		output[i] = weighted_sum(vector, matrix[i])
 	return output
 
 def weighted_sum(data, weights):
@@ -20,7 +20,7 @@ def weighted_sum(data, weights):
 	output = 0
 
 	for i in range(len(data)):
-		output += data[i] * weights[i]
+		output += (data[i] * weights[i])
 
 	return output
 
